@@ -22,13 +22,13 @@ import android.widget.Toast;
  */
 public class Envelopes_Fragment extends Fragment{
     DatabaseHandler handler;
-    Cursor cursorSUMMonthly, cursorSUMYear, cursorGetMonthly, cursorGetYear;
-    double SUMMonthly, SUMYear, SUMPureYear;
+    Cursor cursorSUMMonthly, cursorSUMYear, cursorGetMonthly, cursorGetYear, cursorGetUnallocatedPlus, cursorGetUnallocatedMinus;
+    double SUMMonthly, SUMYear, SUMPureYear, SUMUnallocatedPlus, SUMUnallocatedMinus;
     LinearLayout LinearLayoutMainEnvelopesMonthly, HorizontalEnvelopes1,
             HorizontalEnvelopes2, HorizontalEnvelopes3, VerticalEnvelope,LinearLayoutMainEnvelopesYear;
     TextView TextEnvelopesEnvelope, TextEnvelopesTextProgressAmount,
             TextTotalAmountEnvelopesEnvelope, TextTotalMonthly, TextTotalYear,
-            TextEnvelopesTextProgress;
+            TextEnvelopesTextProgress, TextViewTotalUnallocated, TextViewProgressUnallocated;
     ProgressBar ProgressEnvelopes;
     LinearLayout.LayoutParams ParamsEnvelopesTextEnvelope, ParamsEnvelopesTextProgressAmount,
             ParamsEnvelopesHorizontalLayout, ParamsEnvelopesVerticalLayout,
@@ -45,6 +45,9 @@ public class Envelopes_Fragment extends Fragment{
         TextTotalYear = (TextView) view.findViewById(R.id.TextTotalYear);
         LinearLayoutMainEnvelopesMonthly = (LinearLayout) view.findViewById(R.id.LinearLayoutMainEnvelopesMonthly);
         LinearLayoutMainEnvelopesYear = (LinearLayout) view.findViewById(R.id.LinearLayoutMainEnvelopesYear);
+        TextViewTotalUnallocated = (TextView) view.findViewById(R.id.TextTotalUnallocated);
+        TextViewProgressUnallocated = (TextView) view.findViewById(R.id.TextViewUnallocatedProgress);
+
         Envelopes();
         return view;
     }

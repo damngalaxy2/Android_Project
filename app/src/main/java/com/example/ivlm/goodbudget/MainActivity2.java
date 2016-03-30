@@ -89,6 +89,7 @@ public class MainActivity2 extends Fragment implements ViewPager.OnPageChangeLis
         }
 
         tabHost.setCurrentTab(0);
+
         for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++) {
             tabHost.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#2bbf8b")); //unselected
             TextView tv = (TextView) tabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title); //Unselected Tabs

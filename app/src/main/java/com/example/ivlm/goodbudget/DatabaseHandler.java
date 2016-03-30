@@ -56,7 +56,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         db.execSQL("CREATE Table " + TABLE_NAME_4 + " (" + COL_11 + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COL_12 + " TEXT," + COL_13 + " LONG," + COL_14 + " DOUBLE," + COL_15 + " TEXT," + COL_16 + " TEXT," +
                 COL_17 + " TEXT," + COL_18 + " TEXT," + COL_19 + " TEXT)");
-        db.execSQL("CREATE Table " + TABLE_NAME_5 + " (" + COL_20 + " INTEGER PRIMARY KEY AUTOINCREMENT," + COL_21 + " DOUBLE,"+COL_22+" TEXT)");
+        db.execSQL("CREATE Table " + TABLE_NAME_5 + " (" + COL_20 + " INTEGER PRIMARY KEY AUTOINCREMENT," + COL_21 + " DOUBLE," + COL_22 + " TEXT)");
     }
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
@@ -98,6 +98,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public Cursor getUnallocatedPlust(){
+        SQLiteDatabase sqLiteDatabase = getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " +TABLE_NAME_5 + " WHERE Type='Plus'",null);
+
+        return cursor;
+    }
     public Cursor getCompareEnvelope(String envelope){
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
         Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + TABLE_NAME +" WHERE Envelope ='"+envelope+"'",null);

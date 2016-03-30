@@ -145,6 +145,75 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/LinearLayoutMainEnvelopesYear" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Unallocated"
+                                android:textStyle="bold"
+                                android:id="@+id/textView55"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Small Text"
+                                android:id="@+id/TextTotalUnallocated"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:textColor="#616161" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/gradient"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/linearLayout5" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="[Unallocated]"
+                                android:id="@+id/textView56"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="18sp"
+                                android:textColor="#333333" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/TextViewUnallocatedProgress"
+                                android:layout_weight="1"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="30dp"
+                                android:gravity="end"
+                                android:textSize="18sp"
+                                android:textColor="#333333" />
+                        </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>
