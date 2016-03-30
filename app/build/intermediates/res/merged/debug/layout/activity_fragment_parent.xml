@@ -1,0 +1,34 @@
+<android.support.v4.widget.DrawerLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_content"
+            tools:context=".MainActivity">
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_navigation_drawer"
+        />
+</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/B%20R%20O/AndroidStudioProjects/GoodBudget/app/src/main/res/layout/activity_fragment_parent.xml -->

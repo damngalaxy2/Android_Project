@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TextViewDate"
+            android:layout_weight="1.7"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="3dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/TextViewTitle"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#333333" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/TextViewEnvelopeAccount"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/TextViewAmount"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginRight="13dp" />
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/B%20R%20O/AndroidStudioProjects/GoodBudget/app/src/main/res/layout/list_transactions.xml -->

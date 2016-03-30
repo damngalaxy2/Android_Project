@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivlm.goodbudget.Accounts">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/frameLayout">
+
+        <ImageButton
+            android:layout_margin="15dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/fab_plus_white"
+            android:background="@drawable/circle"
+            android:id="@+id/imageButton"
+            android:layout_gravity="right|bottom" />
+    </FrameLayout>
+</RelativeLayout>
+<!-- From: file:/C:/Users/_IVLM/AndroidStudioProjects/GoodBudget/app/src/main/res/layout/activity_accounts.xml -->

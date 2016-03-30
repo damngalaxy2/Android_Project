@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffff"
+        android:id="@+id/LinearLayoutListMonthly">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.25">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_emails"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.75">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/EnvelopeName"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+                android:layout_weight="0.75"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:measureWithLargestChild="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/Amount"
+                android:textSize="15dp"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_reorder"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout><!-- From: file:/C:/Users/B%20R%20O/AndroidStudioProjects/GoodBudget/app/src/main/res/layout/listmonthly.xml -->

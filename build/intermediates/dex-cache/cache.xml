@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\pre-dexed\release\internal_impl-22.2.0-a98664e4768e93402ee698aa47b4cccfb585b35d.jar" />
+    </item>
+    <item
+        jar="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\pre-dexed\release\classes-9d74a0dd9153a1e07d798d2269944303b0f8fb3d.jar" />
+    </item>
+    <item
+        jar="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\pre-dexed\release\classes-955982b46429c50e33b15fe9411eb59ec8fddba3.jar" />
+    </item>
+    <item
+        jar="C:\Users\B R O\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.2.3\f474798fde03291398b1a016118b9809a79550b7\MPAndroidChart-v2.2.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f474798fde03291398b1a016118b9809a79550b7">
+        <dex dex="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\pre-dexed\release\MPAndroidChart-v2.2.3-d9bcb54dfa75407727c3a0366599ca2493af8b1a.jar" />
+    </item>
+    <item
+        jar="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\pre-dexed\release\classes-2aa0426ffd141933c0095c8becd66d06562a9ba9.jar" />
+    </item>
+    <item
+        jar="C:\Users\B R O\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\B R O\AndroidStudioProjects\GoodBudget\app\build\intermediates\pre-dexed\release\support-annotations-22.2.0-abf9835503e1d4c86beba3690afaeda91632ffb2.jar" />
+    </item>
+
+</items>

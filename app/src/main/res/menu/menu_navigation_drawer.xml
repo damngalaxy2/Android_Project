@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home_Menu"
+            android:checked="false"
+            android:title="@string/nav_home"/>
+        <item
+            android:id="@+id/Fill_Envelopes"
+            android:checked="false"
+            android:title="@string/nav_envelopes_fill"/>
+        <item
+            android:id="@+id/Envelopes_Transfer"
+            android:checked="false"
+            android:title="@string/nav_envelopes_transfer"/>
+        <item
+            android:id="@+id/Edit_Envelopes"
+            android:checked="false"
+            android:title="@string/nav_edit_envelopes"/>
+        <item
+            android:id="@+id/Help"
+            android:checked="false"
+            android:title="@string/nav_help"/>
+        <item
+            android:id="@+id/Settings"
+            android:checked="false"
+            android:title="@string/nav_settings"/>
+    </group>
+</menu>

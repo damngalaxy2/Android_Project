@@ -1,0 +1,268 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ivlm.goodbudget.AddTransaction"
+    android:background="@drawable/gradient_linear_layout">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Payee"
+            android:id="@+id/textView23"
+            android:layout_alignParentTop="true"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <AutoCompleteTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:id="@+id/AutoCompleteText"
+            android:hint="Whom did you pay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignStart="@+id/linearLayout4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Amount"
+            android:id="@+id/textView24"
+            android:textSize="15sp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignStart="@+id/linearLayout4"
+        android:id="@+id/linearLayout8"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/EditTextAmount"
+            android:layout_weight="0.5"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:id="@+id/SpinnerMode"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout7"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignEnd="@+id/linearLayout8"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Envelope"
+            android:id="@+id/textView25"
+            android:textSize="15sp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_alignStart="@+id/linearLayout7"
+        android:layout_marginRight="10dp"
+        android:id="@+id/linearLayout9">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:id="@+id/SpinnerEnvelope" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout10"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Account"
+            android:id="@+id/textView26"
+            android:textSize="15sp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout10"
+        android:layout_alignStart="@+id/linearLayout9"
+        android:id="@+id/linearLayout12">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:id="@+id/SpinnerAccount"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout11"
+        android:layout_below="@+id/linearLayout12"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Date"
+            android:id="@+id/textView27"
+            android:textSize="15sp"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout11"
+        android:layout_alignStart="@+id/linearLayout8"
+        android:id="@+id/LinearLayoutDatePicker">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/TextViewDate"
+                android:layout_marginLeft="8dp"
+                android:textColor="#010101"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView32"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:id="@+id/imageView7"
+            android:layout_marginLeft="5dp"
+            android:background="#6a6a6a"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout14"
+        android:layout_alignEnd="@+id/linearLayout9"
+        android:layout_below="@+id/LinearLayoutDatePicker"
+        android:layout_alignStart="@+id/linearLayout6"
+        android:layout_marginLeft="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Note"
+            android:id="@+id/textView29"
+            android:textSize="15sp"
+            android:layout_below="@+id/linearLayout4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout15"
+        android:layout_below="@+id/linearLayout14"
+        android:layout_alignRight="@+id/linearLayout9"
+        android:layout_alignStart="@+id/LinearLayoutDatePicker">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/EditTextNote"
+            android:layout_below="@+id/linearLayout11"
+            android:hint="  (Optional)" />
+    </LinearLayout>
+
+</LinearLayout>

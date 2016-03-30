@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/capture"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create NEW Household"
+        android:id="@+id/CreateNewHousehold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:background="#3798ff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="New to Goodbudget?"
+        android:id="@+id/textView"
+        android:textSize="15dp"
+        android:layout_above="@+id/CreateNewHousehold"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

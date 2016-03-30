@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#3272FF</color>
+    <color name="ColorPrimaryPressed">#2952A5</color>
+    <color name="ColorPrimaryDar">#E64A19</color>
+    <color name="ColorActionBar">#2bbf8b</color>
+    <color name="ColorActionBarPressed">#2aa577</color>
+</resources>

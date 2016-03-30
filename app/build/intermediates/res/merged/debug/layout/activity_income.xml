@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivlm.goodbudget.Income"
+    android:background="#ffffff">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Enter your estimated income..."
+                android:id="@+id/textView11"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="380dp"
+                android:id="@+id/scrollView"
+                android:layout_below="@+id/textView11">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Layout">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView11"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/LinearLayoutAdd"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+ Add Income"
+                            android:id="@+id/ButtonAdd"
+                            android:background="#3798ff"
+                            android:paddingLeft="20dp"
+                            android:textColor="#ffff"
+                            android:paddingRight="20dp"
+                            android:layout_below="@+id/LinearLayoutAdd"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="25dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/scrollView"
+            android:id="@+id/LinearLayoutAddSave"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Save"
+                android:id="@+id/textView22"
+                android:layout_gravity="center"
+                android:textColor="#3773ff"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/B%20R%20O/AndroidStudioProjects/GoodBudget/app/src/main/res/layout/activity_income.xml -->

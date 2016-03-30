@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ivlm.goodbudget.MainActivity2"
+    android:background="#ffffff">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:id="@+id/horizontalScrollView">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"></TabWidget>
+        </HorizontalScrollView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/frameLayout6" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_linear_layout">
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/view_pager">
+
+                    </android.support.v4.view.ViewPager>
+                </FrameLayout>
+
+                <ImageButton
+                    android:layout_margin="15dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/fab_plus_white"
+                    android:background="@drawable/style_floating_action_button"
+                    android:id="@+id/FAB"
+                    android:layout_gravity="right|bottom" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>
